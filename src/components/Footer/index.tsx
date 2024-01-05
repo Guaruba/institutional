@@ -1,26 +1,21 @@
 import Link from 'next/link'
 
 import { Logo } from '../Logo'
-import {
-  Copyright,
-  Instagram,
-  Linkedin,
-  Mail,
-  MessageCircleMore,
-} from 'lucide-react'
+import { Copyright, Mail, MessageCircleMore } from 'lucide-react'
 import { Button } from '../ui/button'
+import { SocialMedia } from '../social-media'
 
 export function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 rounded-t-3xl">
+    <footer className="w-full bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 rounded-t-3xl px-5">
       <div className="flex flex-col max-w-screen-xl mx-auto">
-        <div className="flex mt-10 justify-between max-md:flex-col max-md:text-center max-md:px-10">
-          <div>
+        <div className="flex mt-10 justify-between max-md:flex-col max-md:text-center max-md:px-10 max-md:space-y-5">
+          <div className="text-zinc-50">
             <p className="font-bold text-xl">Acelere agora seu negócio</p>
             <p>Solicite um orçamento agora mesmo</p>
           </div>
-          <Button className="bg-yellow-400 py-6 font-bold hover:bg-yellow-300 rounded-full">
-            Solicitar um orçamento
+          <Button className="bg-blue-800 py-6 font-bold hover:bg-blue-700 rounded-full">
+            Solicite um orçamento
           </Button>
         </div>
         <hr className="my-10 w-full bg-zinc-50/20 rounded-full" />
@@ -29,25 +24,14 @@ export function Footer() {
             <div className="max-md:flex max-md:justify-center">
               <Logo height={90} width={180} />
             </div>
-            <p className="text-sm">Solucionar é o nosso negócio.</p>
-            <div className="flex items-center space-x-5 max-md:justify-center">
-              <Link
-                href="https://www.instagram.com/guaruba.dev"
-                className="bg-zinc-100/50 hover:bg-zinc-100/30 rounded-full p-2"
-              >
-                <Instagram size={14} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/guaruba.dev"
-                className="bg-zinc-100/50 hover:bg-zinc-100/30 rounded-full p-2"
-              >
-                <Linkedin size={14} />
-              </Link>
-            </div>
-          </div>
-          <div className="space-y-3 max-md:text-center">
-            <b>Institucional</b>
+            <p className="text-sm text-zinc-50">
+              Solucionar é o nosso negócio.
+            </p>
 
+            <SocialMedia />
+          </div>
+          <div className="space-y-3 max-md:text-center text-zinc-50">
+            <b>Institucional</b>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#">Home</Link>
@@ -60,7 +44,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3 max-md:text-center">
+          <div className="space-y-3 max-md:text-center text-zinc-50">
             <b>Contatos</b>
             <ul className="space-y-2 text-sm">
               <li>
@@ -85,7 +69,7 @@ export function Footer() {
           </div>
         </div>
         <hr className="my-10 w-full bg-zinc-50/20 rounded-full" />
-        <div className="flex justify-between w-full max-md:flex-col mb-10">
+        <div className="flex justify-between w-full max-md:flex-col mb-10 text-zinc-50">
           <div className="flex space-x-1 text-sm items-center max-md:justify-center">
             <Copyright size={14} />{' '}
             <p>
