@@ -8,7 +8,19 @@ import { BadgeHelp, Gauge, Rocket, Users } from 'lucide-react'
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="min-h-screen w-full bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 rounded-b-3xl"></div>
+      <div className="bg-white">
+        <div className="w-full lg:flex bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 pt-20 rounded-b-3xl p-10 lg:p-36">
+          <div className="space-y-5">
+            <p className="font-bold text-4xl lg:text-7xl">
+              Transformando ideias em realidade digital
+            </p>
+            <p className="font-bold lg:text-xl">
+              Construindo o futuro através da inovação tecnológica
+            </p>
+          </div>
+          <img src="" alt="" />
+        </div>
+      </div>
       <div className="grid lg:grid-cols-2 gap-5 p-10 lg:p-36 bg-white">
         <div className="rounded-3xl shadow-md text-blue-800 p-10 space-y-5">
           <Users size={50} />
@@ -111,7 +123,7 @@ export default function Home() {
             <div className="rounded-full bg-zinc-800">
               <Image
                 src={sgaLogo}
-                className="m-5 lg:h-40 lg:w-40 h-10 w-20"
+                className="m-5 lg:h-10 lg:w-28 h-8 w-20"
                 alt="rsa-logo"
               />
             </div>
