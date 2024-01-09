@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 import { Logo } from '../Logo'
 import { Copyright, Mail, MessageCircleMore } from 'lucide-react'
-import { Button } from '../ui/button'
 import { SocialMedia } from '../social-media'
+import { BudgetButton } from '../buttons/budget-button'
 
 export function Footer() {
   return (
@@ -14,9 +14,7 @@ export function Footer() {
             <p className="font-bold text-xl">Acelere agora seu negócio</p>
             <p>Solicite um orçamento agora mesmo</p>
           </div>
-          <Button className="bg-blue-800 py-6 font-bold hover:bg-blue-700 rounded-full">
-            Solicite um orçamento
-          </Button>
+          <BudgetButton />
         </div>
         <hr className="my-10 w-full bg-zinc-50/20 rounded-full" />
         <div className="grid max-md:grid-cols-1 grid-cols-3 gap-10">

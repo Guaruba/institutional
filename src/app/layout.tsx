@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="flex min-h-screen flex-col items-center justify-between w-full bg-zinc-50">
+        <div className="flex min-h-screen flex-col items-center justify-between w-full bg-zinc-200">
           <Header />
           {children}
           <Footer />

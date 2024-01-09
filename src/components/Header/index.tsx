@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { Button } from '../ui/button'
 import { Logo } from '../Logo'
 import { SocialMedia } from '../social-media'
+import { BudgetButton } from '../buttons/budget-button'
 
 export function Header() {
   return (
@@ -21,9 +21,7 @@ export function Header() {
 
       <div className="flex items-center space-x-3 max-lg:justify-center">
         <SocialMedia />
-        <Button className="bg-blue-800 py-6 font-bold hover:bg-blue-700 rounded-full">
-          Solicite um orçamento
-        </Button>
+        <BudgetButton />
       </div>
     </header>
   )
