@@ -7,7 +7,7 @@ import { BudgetButton } from '../buttons/budget-button'
 
 export function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 rounded-t-3xl px-5">
+    <footer className="w-full bg-gradient-to-tr from-[#126E51] via-[#7ED957] to-yellow-200 lg:rounded-t-[3rem] px-5">
       <div className="flex flex-col max-w-screen-xl mx-auto">
         <div className="flex mt-10 justify-between max-md:flex-col max-md:text-center max-md:px-10 max-md:space-y-5">
           <div className="text-zinc-50">
@@ -51,7 +51,7 @@ export function Footer() {
                   className="flex max-md:justify-center items-center space-x-2"
                 >
                   <Mail size={14} />
-                  <p>lucasviniciusaalves@rsa.bet</p>
+                  <p>lucas.vinicius@guaruba.dev</p>
                 </Link>
               </li>
               <li>
